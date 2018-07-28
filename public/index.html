@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crypto Converter</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <link href="/styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="container">
+    <div id="display">
+      <h1>Cryptocurrency Converter</h1>
+      <span id="input">
+        <input id="user-value" type="number" step="0.01" value="0.00">
+        <select id="unit-from">
+          <option value="" disabled selected>Select Unit</option>
+          <option value="usd">USD</option>
+          <option value="btc">BTC</option>
+          <option value="eth">ETH</option>
+          <option value="xrp">XRP</option>
+          <option value="bch">BCH</option>
+          <option value="eos">EOS</option>
+          <option value="ltc">LTC</option>
+        </select>
+      </span>
+      <label>=</label>
+      <span id="input">
+        <input id="output-value" type="number" disabled>
+        <select id="unit-to">
+          <option value="" disabled selected>Select Unit</option>
+          <option value="usd">USD</option>
+          <option value="btc">BTC</option>
+          <option value="eth">ETH</option>
+          <option value="xrp">XRP</option>
+          <option value="bch">BCH</option>
+          <option value="eos">EOS</option>
+          <option value="ltc">LTC</option>
+        </select>
+      </span>
+      <button id="convert-button">Convert</button>
+    </div>
+  </div>
+  <script src="/websocket-client.js"></script>
+</body>
+</html>

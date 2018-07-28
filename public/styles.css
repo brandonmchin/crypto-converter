@@ -1,0 +1,38 @@
+h1 {
+  padding-bottom: 20px;
+}
+
+button {
+  background: #575ed8;
+  color: #fff;
+  border: 0;
+  margin-top: 50px;
+  padding: 12px 0;
+  width: 50%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #363b89;
+}
+
+#container {
+  max-width: 800px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+#display {
+  height: 300px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  overflow: auto;
+  background: #f9f9f9;
+}
+
+#input {
+  padding: 20px;
+}
